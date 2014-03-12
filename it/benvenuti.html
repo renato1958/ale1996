@@ -1,43 +1,53 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Il sito di Ale</title>
-    <link rel="stylesheet" href="../stili/layout.css" type="text/css" media="screen" />
+      <link rel="stylesheet" type="text/css" href="../css/layout.css" media="screen and (min-width: 481px)" />
+      <link rel="stylesheet" type="text/css" href="../css/iphone.css" media="only screen and (max-width: 480px)" />
+	  <!--[if IE]>
+	  <link rel="stylesheet" type="text/css" href="css/layout.css" media="screen" />
+	  <![endif]-->
+	  <meta name="viewport" content="width = device-width, user-scalable = no" />
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
   </head>
 
-  <body>
+  <body class="welcome">
     <div id="wrapper">
+    <!--<div id="grid"><img src="../immagini/main-grid.png" width="1100" height="2000" alt="" /></div>-->
       <div id="header">
-        <img src="../immagini/ale_ganzo.jpg" alt="Questo sono io!" id="logo" />
-        <h1 id="main_title">Sito di Ale - Home Page</h1>
-      </div><!-- HEADER -->
+        <h1><a href="../index.html" class="main_title">Sito di Ale - Home Page</a></h1>
+      </div><!-- #header -->
 
-      <div id="navbar">
-        <h3>I miei preferiti</h3>
-        <ul>
-          <li><a href="http://www.disney.it" title="Sito italiano della Disney" target="_blank">Disney.it</a></li>
-          <li><a href="http://www.nintendo.it" title="Sito italiano della Nintendo" target="_blank">Nintendo</a></li>
-          <li><a href="http://ms.nintendo-europe.com/animalcrossingds/itIT" title="Nintendo Animal Crossing" target="_blank">Animal Crossing</a></li>
-          <li><a href="http://www.gardaland.it" title="Sito di Gardaland" target="_blank">Gardaland</a></li>
-          <li><a href="http://www.mirabilandia.it" title="Sito di Mirabilandia" target="_blank">Mirabilandia</a></li>
-          <li><a href="http://www.corosilentium.it" title="Coro Silentium di Somaglia (LO)" target="_blank">Coro Silentium</a></li>
-
-          <li><a href="http://www.mariokartsite.it" title="Sito dedicato a Mario Kart" target="_blank">Mario Kart Site</a></li>
-        </ul>
-      </div><!-- NAVBAR -->
-
+      <ul id="navbar">
+	      <li><h3 class="first">Ale 1996</h3></li>
+		  <li class="welcome"><p>Benvenuti!</p></li>
+          <li><a href="mm_2009.html" title="Milano Marittima 2009">Mare 2009</a></li>
+	      <li><h3>I miei preferiti</h3></li>
+          <li><a  class="first external" href="http://www.gardaland.it" title="Sito di Gardaland" target="_blank">Gardaland</a></li>
+          <li><a class="external" href="http://www.mirabilandia.it" title="Sito di Mirabilandia" target="_blank">Mirabilandia</a></li>
+          <li><a class="external" href="http://www.corosilentium.it" title="Coro Silentium di Somaglia (LO)" target="_blank">Coro Silentium</a></li>
+      </ul><!-- #navbar -->
+      
       <div id="content">
-        <h2>ATTENZIONE!</h2>
-        <img id="lavori" src="../immagini/works.gif" alt="lavori in corso" />
-        <p>Il mio sito &egrave; attualmente in ristrutturazione. Le foto erano in effetti un po&#39; vecchie...
-        Sar&ograve; in linea al pi&ugrave; presto.<br /><br />Arrivederci a presto a tutti i bambini!</p>
-      </div><!-- CONTENT -->
+        <h2>Benvenuti sulla mia Home Page!</h2>
+        
+        <div class="fumetto">
+          <div>
+            <p>Finalmente &egrave; arrivata l'estate!</p>
+            <p>La scuola &egrave; finita e non vedo l'ora di essere al mare con i miei amici</p>
+            <p>sulla riviera adriatica, a nuotare, giocare a calcetto e fare wind-surf, che &egrave; uno dei miei sport preferiti.</p>
+            <p>Buone vacanze a tutti e arrivederci a presto!</p>
+          </div>
+        </div><!-- #fumetto -->
+        
+      </div><!-- #content -->
 
       <div id="footer">
-        <p>Ultimo aggiornamento: 02/09/2007</p>
-      </div><!-- FOOTER -->
+        <p>Ultimo aggiornamento: 24/07/2010</p>
+      </div><!-- #footer -->
 
-    </div><!-- WRAPPER -->
-
+    </div><!-- #wrapper -->
+    
   </body>
 </html>

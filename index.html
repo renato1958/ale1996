@@ -1,34 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-  <html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  <html>
 
     <head>
       <title>Benvenuti in Ale 1996 - Willkommen zu Ale1996!</title>
-      <link rel="stylesheet" href="stili/layout.css" "type="text/css" />
+      <link rel="stylesheet" type="text/css" href="css/layout.css" media="screen and (min-width: 481px)" />
+      <link rel="stylesheet" type="text/css" href="css/iphone.css" media="only screen and (max-width: 480px)" />
+	  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	  <!--[if IE]>
+	  <link rel="stylesheet" type="text/css" href="css/layout.css" media="screen" />
+	  <![endif]-->
+	  <meta name="viewport" content="width = device-width, user-scalable = no" />
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/iphone.js"></script>
     </head>
 
     <body>
+    
+      <div id="wrapper" class="first">
+        <div id="ale">
+        </div><!-- ALE -->
 
-      <div id="ale">
-        <img src="immagini/ale_ganzo.jpg" />
-      </div><!-- ALE -->
+        <div id="italia">
+          <a href="it/benvenuti.html"><img src="immagini/italia.gif" class="flag" /></a>
+          <p>Amici italiani, cliccate sulla bandiera</p>
+        </div><!-- #italia -->
+		
 
-      <div id="italia_txt">
-        Amici italiani,<br />
-        cliccate sulla bandiera
-      </div>
-
-      <div id="germania_txt">
-        Deutschsprachige Freunde,<br />
-        bitte Fahne clicken
-      </div>
-
-      <div id="italia">
-        <a href="it/benvenuti.html"><img src="immagini/italia.gif" /></a>
-      </div>
-
-      <div id="germania">
-        <a href="de/willkommen.html"><img src="immagini/germania.gif" /></a>
-      </div>
+        <div id="germania">
+          <a href="de/willkommen.html"><img src="immagini/germania.gif" class="flag" /></a>
+          <p>Deutschsprachige Freunde, bitte Fahne clicken</p>
+        </div><!-- #germania -->
+      </div><!-- #wrapper -->
 
     </body>
 

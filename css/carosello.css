@@ -1,0 +1,80 @@
+#carousel {
+    margin: 50px 0 0 0;
+	padding: 0 10px 0 0;
+    width: 840px;
+		height: 500px;
+		border: 2px solid #333;
+		background: url(../immagini/sfondo.png) top left repeat-x;
+		overflow: auto;
+		position: relative;
+		min-width: 500px;
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+		-moz-box-shadow: 10px 10px 15px #000;
+		-webkit-box-shadow: 10px 10px 15px #000;
+		/*border-radius: 15px;*/
+		/*box-shadow: 10px 10px 10px #000;*/
+}		
+
+#carousel img {
+    margin: 0;
+	padding: 0;
+}
+
+.titolo {
+    position: absolute;
+		top: 440px;
+		right: 10px;
+		margin: 10px;
+		padding: 8px;
+		border: 1px solid #ccc;
+		background-color: rgba(0, 0, 0, .3);
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		/*border-radius: 3px;*/
+        color: #fff;
+		font-size: 1em;
+		font-weight: bold;
+		font-family: Verdana, Trebuchet, Arial, Helvetica, sans-serif;
+		text-shadow: 3px 3px 3px #000;
+}
+
+.left-button {
+    position: absolute;
+	top: 20px;
+	width: 30px;
+	height: 30px;
+	display: none;
+    left: 10px;
+	background: url(../immagini/arrow-left.png) 0 0 no-repeat;
+}
+
+.left-button:hover, .left-button:focus {
+	cursor: pointer;
+    background: url(../immagini/arrow-left-hover.png) 0 0 no-repeat;
+}
+
+.left-button:active {
+	cursor: pointer;
+    background: url(../immagini/arrow-left-pressed.png) 0 0 no-repeat;
+}
+
+.right-button {
+    position: absolute;
+	top: 20px;
+	width: 30px;
+	height: 30px;
+	display: none;
+    right: 10px;
+	background: url(../immagini/arrow-right.png) 0 0 no-repeat;
+}
+
+.right-button:hover, .right-button:focus {
+	cursor: pointer;
+    background: url(../immagini/arrow-right-hover.png) 0 0 no-repeat;
+}
+
+.right-button:active {
+	cursor: pointer;
+    background: url(../immagini/arrow-right-pressed.png) 0 0 no-repeat;
+}

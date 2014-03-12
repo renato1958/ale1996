@@ -1,0 +1,249 @@
+/* layout.css
+   foglio di stile principale per ale1996
+*/
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: .85em;
+  font-weight: normal;
+  text-align: center;  /* centra in IE5 */
+}
+
+#wrapper {
+  width: 1100px;
+  margin: 20px auto 0 auto;  /* centra negli altri browsers */
+  text-align: left;   /* ripristina l'allineamento */
+  position: relative;
+}
+
+#grid {
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: 9999;
+}
+
+#wrapper.first {
+  background-color: #fff;
+}
+
+#header {
+  height: 120px;
+  color: #ffcc33;
+  background: #6633cc url(../immagini/ale_14.jpg) 10px 10px no-repeat;
+  margin: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+#header h1 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+a.main_title {
+  font-family: "Times New Roman", Times, serif;
+  text-align: right;
+  margin: 0;
+  line-height: 120px;
+  padding: 0 20px 0 0;
+  display: block;
+}
+
+a.main_title:link, a.main_title:hover, a.main_title:active, a.main_title:visited, a.main_title:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+#logo {
+  float: left;
+  margin: 10px;
+}
+
+#navbar {
+  width: 180px;
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+  float: left;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  display: block;
+  margin: 0;
+  padding: 0 15px 5px 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #6633cc;
+}
+
+#navbar a:hover, #navbar a:focus {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 5px 10px;
+  display: block;
+  color: #fff;
+  background-color: #000;
+  text-decoration: underline;
+}
+
+body.welcome  #navbar li.welcome, body.mm_2009 #navbar li.mm_2009 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  margin: 0;
+  padding: 0 0 5px 18px;
+  color: #aaa;
+  background-color: #6633cc;
+  text-decoration: none;  
+}
+
+#navbar a.first {
+  padding-top: 5px;
+}
+
+#navbar a.external {
+  background-image: url(../immagini/external.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+#navbar li p {
+  margin: 0;
+  padding: 5px 0 0 0;
+}
+
+#navbar h3 {
+  margin: 0;
+  padding: 5px 0 3px 10px;
+  color: #f3c787;
+  font-size: 1.4em;
+  border-bottom: 1px solid #f3c787;
+  background-color: #8855ee;
+}
+
+#navbar h3.first {
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+}
+
+#content {
+  width: 880px;  
+  float: right;
+  margin: 20px 0 20px 0;
+  padding: 0;
+  background-color: #fff;
+  position: relative;
+}
+
+body.welcome #content {
+  background: url(../immagini/parco_sempione.png) left top no-repeat;
+}
+
+#content h2 {
+  margin: 0;
+  padding: 20px 20px 10px 0;
+  font-family: Times, serif;
+  font-size: 2em;
+  color: #990000;
+  text-align: center;
+}
+
+#content p.story {
+  margin: 10px 0 0 0;
+  padding: 5px;
+  border: 1px solid #990000;
+  background-color: #fbf8cb;
+}
+
+#content p.instr {
+  margin: 10px 10px 0 0;
+  padding: 0;
+  font-size: .82em;
+  color: #aaa;
+  text-align: right;
+}
+
+#content div.fumetto {
+  width: 400px;
+  height: 400px;
+  background: url(../immagini/fumetto.png) top left no-repeat;
+  float: right;
+}
+
+#content div.fumetto div {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+}
+
+#content div.fumetto div p {
+  margin: 0;
+  padding: 0;
+  font-size: .85em;
+  font-style: normal;
+  font-weight: normal;
+  color: #990000;
+}
+
+#footer {
+  color: #444;
+  font-size: .85em;
+  line-height: 1.8em;
+  text-align: right;
+  clear: both;
+  padding: 0 0 20px 0;
+}
+
+#footer p {
+  margin: 0;
+}
+
+#ale {
+  width: 133px;
+  height: 100px;
+  background: url(../immagini/ale_14.jpg) top left no-repeat;
+  text-align: center;
+  margin: 5em auto 0 auto;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -webkit-box-reflect: below 2px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));  
+}
+
+#italia {
+  float: left;
+  text-align: center;
+  margin-top: 10em;
+}
+
+#germania {
+  float: right;
+  text-align: center;
+  margin-top: 10em;
+}
+
+#italia p, #germania p {
+  font-size: .7em;
+  font-weight: bold;
+}
+
+img {
+  border: none;
+}
